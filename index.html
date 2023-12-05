@@ -1,31 +1,355 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.6.0/fonts/remixicon.css" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@3.6.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
     <title>Odyssey</title>
-</head>
-<body>
+  </head>
+  <body>
     <header class="header">
-        <nav>
-            <div class="nav__bar">
-                <div class="logo">
-                    <a href="#"><img src="assets/logo.svg" alt="logo" height="120px" width="120px"></a>
-                </div>
-                <div class="nav__menu__btn" id="menu-btn">
-                    <i class="ri-menu-line"></i>
-                </div>
+      <nav>
+        <div class="nav__bar">
+          <div class="logo">
+            <a href="#">odyssey</a>
+          </div>
+          <div class="nav__menu__btn" id="menu-btn">
+            <i class="ri-menu-line"></i>
+          </div>
+        </div>
+        <ul class="nav__links" id="nav-links">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#service">Services</a></li>
+          <li><a href="#offer">Offer</a></li>
+          <li><a href="#client">Client</a></li>
+          <li><button class="btn sign-up">Sign Up</button></li>
+        </ul>
+      </nav>
+      <div class="section__container header__container" id="home">
+        <h1>What is Your Next Destination?</h1>
+        <div class="booking">
+          <div class="booking__type" id="booking-type">
+            <div class="active">One Way</div>
+            <div>Round Trip</div>
+            <div>Multi City</div>
+          </div>
+          <form action="/" class="booking__form">
+            <div class="booking__input">
+              <label for="arrival">To</label>
+              <input type="text" placeholder="Arrival" name="arrival" />
             </div>
-            <ul class="nav__links" id="nav-links">
-                <li><a href="#home">Home</a></li>
-                <li><a href="#service">Services</a></li>
-                <li><a href="#offer">Offer</a></li>
-                <li><a href="#client">Client</a></li>
-                <li><button class="btn">Sign Up</button></li>
-            </ul>
-        </nav>
+            <div class="booking__input">
+              <label for="departure">From</label>
+              <input type="text" placeholder="Departure" name="departure" />
+            </div>
+            <div class="booking__input">
+              <label for="date">Date</label>
+              <input type="text" placeholder="Date" name="date" />
+            </div>
+          </form>
+          <div class="booking__btn">
+            <button class="btn book-now">Book Now</button>
+          </div>
+        </div>
+      </div>
     </header>
-</body>
+
+    <section class="section__container service__container" id="service">
+      <h2 class="section__header">Our Services</h2>
+      <p class="section__description">
+        Embark on a journey of discovery and enlightenment with our travel
+        services.
+      </p>
+      <div class="service__grid">
+        <div class="service__card">
+          <img src="assets/service-1.jpg" alt="service" />
+          <div>
+            <div>
+              <h4>Cruise Ticket</h4>
+              <p>
+                Immerse yourself in the beauty of the sea with our cruise
+                tickets.
+              </p>
+            </div>
+            <div class="service__btn">
+              <button class="btn">See all</button>
+            </div>
+          </div>
+        </div>
+        <div class="service__card">
+          <img src="assets/service-2.jpg" alt="service" />
+          <div>
+            <div>
+              <h4>Car Booking</h4>
+              <p>
+                Experience unparalleled comfort with our car booking services.
+              </p>
+            </div>
+            <div class="service__btn">
+              <button class="btn">See all</button>
+            </div>
+          </div>
+        </div>
+        <div class="service__card">
+          <img src="assets/service-3.jpg" alt="service" />
+          <div>
+            <div>
+              <h4>Air Ticket</h4>
+              <p>
+                Secure your seat to your dream destination with our air tickets.
+              </p>
+            </div>
+            <div class="service__btn">
+              <button class="btn">See all</button>
+            </div>
+          </div>
+        </div>
+        <div class="service__card">
+          <img src="assets/service-4.jpg" alt="service" />
+          <div>
+            <div>
+              <h4>Hotel Booking</h4>
+              <p>
+                Enjoy a luxurious stay at your dream destination with our hotel
+                booking services.
+              </p>
+            </div>
+            <div class="service__btn">
+              <button class="btn">See all</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section__container offer__container" id="offer">
+      <div class="offer__header">
+        <h2 class="section__header">Flight Offer Details</h2>
+        <a href="">See all</a>
+      </div>
+      <div class="offer__grid">
+        <div class="offer__card">
+          <img src="assets/offer-1.jpg" alt="offer" />
+          <h4>Greece to USA</h4>
+          <p>Dec 15, 2023</p>
+          <div>
+            <span>$560.00</span>
+            <button class="btn">Book Now</button>
+          </div>
+        </div>
+        <div class="offer__card">
+          <img src="assets/offer-2.jpg" alt="offer" />
+          <h4>Dhaka to Dubai</h4>
+          <p>Dec 17, 2023</p>
+          <div>
+            <span>$540.00</span>
+            <button class="btn">Book Now</button>
+          </div>
+        </div>
+        <div class="offer__card">
+          <img src="assets/offer-3.jpg" alt="offer" />
+          <h4>Mexico to Nassau</h4>
+          <p>Dec 14, 2023</p>
+          <div>
+            <span>$360.00</span>
+            <button class="btn">Book Now</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section__container about__container" id="about">
+      <div class="about__image">
+        <img src="assets/about.png" alt="about" />
+      </div>
+      <div class="about__content">
+        <h2 class="section__header next__destination">Your Next Destination</h2>
+        <p class="section__description next__p">
+          Exploring the world has never been easier with Odyssey. We help you
+          find the best deals on flight, hotel, car rental and cruise.
+        </p>
+        <ul>
+          <li>
+            <span><i class="ri-checkbox-circle-line"></i></span>
+            Easily find and compare transportation and accommodation options.
+          </li>
+          <li>
+            <span><i class="ri-checkbox-circle-line"></i></span>
+            Enjoy a hassle-free booking experience.
+          </li>
+        </ul>
+        <div class="about__links">
+          <a href="#">
+            <img src="assets/google-play.png" alt="google-play" />
+          </a>
+          <a href="#">
+            <img src="assets/app-store.png" alt="app-store" />
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section class="client" id="client">
+      <div class="section__container client__container">
+        <h2 class="section__header">What Our Clients Say</h2>
+        <!-- Slider main container -->
+        <div class="swiper">
+          <!-- Additional required wrapper -->
+          <div class="swiper-wrapper">
+            <!-- Slides -->
+            <div class="swiper-slide">
+              <div class="client__card">
+                <img src="assets/client-1.jpg" alt="client" />
+                <h4>James Rodriquez</h4>
+                <div class="client__ratings">
+                  <span></span>
+                  <span><i class="ri-star-fill"></i></span>
+                  <span><i class="ri-star-fill"></i></span>
+                  <span><i class="ri-star-fill"></i></span>
+                  <span><i class="ri-star-half-line"></i></span>
+                  <span><i class="ri-star-line"></i></span>
+                </div>
+                <p>
+                  It's incredibly easy to book a flight with Odyssey and see how
+                  much you can save.
+                </p>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="client__card">
+                <img src="assets/client-2.jpg" alt="client" />
+                <h4>Sarah Thompson</h4>
+                <div class="client__ratings">
+                  <span></span>
+                  <span><i class="ri-star-fill"></i></span>
+                  <span><i class="ri-star-fill"></i></span>
+                  <span><i class="ri-star-fill"></i></span>
+                  <span><i class="ri-star-half-line"></i></span>
+                  <span><i class="ri-star-line"></i></span>
+                </div>
+                <p>
+                  Booking a flight with Odyssey is a breeze. In just a few
+                  clicks you can get your flight ticket. I love it!
+                </p>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="client__card">
+                <img src="assets/client-3.jpg" alt="client" />
+                <h4>Emily Chang</h4>
+                <div class="client__ratings">
+                  <span></span>
+                  <span><i class="ri-star-fill"></i></span>
+                  <span><i class="ri-star-fill"></i></span>
+                  <span><i class="ri-star-fill"></i></span>
+                  <span><i class="ri-star-fill"></i></span>
+                  <span><i class="ri-star-fill"></i></span>
+                </div>
+                <p>
+                  The local guides and experiences offered by this platform
+                  added a whole new dimension to my trip.
+                </p>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="client__card">
+                <img src="assets/client-4.jpg" alt="client" />
+                <h4>Michael Turner</h4>
+                <div class="client__ratings">
+                  <span></span>
+                  <span><i class="ri-star-fill"></i></span>
+                  <span><i class="ri-star-fill"></i></span>
+                  <span><i class="ri-star-fill"></i></span>
+                  <span><i class="ri-star-fill"></i></span>
+                  <span><i class="ri-star-line"></i></span>
+                </div>
+                <p>
+                  The convenience of booking flights, accommodation, and
+                  transportation all in one place is a game changer.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer">
+        <div class="section__container footer__container">
+            <div class="footer__col">
+                <div class="logo">
+                    <a href="#">odyssey</a>
+                </div>
+                <p>
+                    Explore the world with us and experience a new way of travelling.
+                </p>
+                <ul class="footer__socials">
+                    <li>
+                        <a href="#"><i class="ri-meta-fill"></i></a>
+                    </li>
+                    <li>
+                        <a href="#"><i class="ri-instagram-line"></i></a>
+                    </li>
+                    <li>
+                        <a href="#"><i class="ri-twitter-x-line"></i></a>
+                    </li>
+                </ul>
+            </div>
+            <div class="footer__col">
+                <h4>Quick Links</h4>
+                <ul class="footer__links">
+                    <li>
+                        <a href="#">Home</a>
+                    </li>
+                    <li>
+                        <a href="#">Flights</a>
+                    </li>
+                    <li>
+                        <a href="#">Hotels</a>
+                    </li>
+                    <li>
+                        <a href="#">Cruise</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="footer__col">
+                <h4>Contact Us</h4>
+                <ul class="footer__links">
+                    <li>
+                        <a href="#">
+                            <span><i class="ri-phone-fill"></i></span> +1 234 567 890
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <span><i class="ri-mail-fill"></i></span> info@odyssey.com  
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="footer__col">
+                <h4>Subscribe</h4>
+                <form action="/">
+                    <input type="text" placeholder="Enter your email" />
+                    <button class="btn subscribe">Subscribe</button>
+                </form>
+            </div>
+        </div>
+        <div class="footer__bar">
+            Copyright @ 2023 Odyssey. All rights reserved.
+        </div>
+    </footer>
+
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="main.js"></script>
+  </body>
 </html>
