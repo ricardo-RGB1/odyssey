@@ -653,8 +653,14 @@ nav {
     align-items: center;
   }
 
+  .client__container {
+    text-align: center;
+  }
+
   .swiper {
-    width: 65%;
+    text-align: center;
+    width: 80%;
+    margin: auto;
   } 
 
 
